@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
+    <p>Nesta frase tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag I (não semântica).</p>
+    <p>Nesta frase temos um <em>termo em itálico</em> usando a tag EM (semântica).</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p>
+    <p>E no outro parágrafo temos <mark style="background-color: lime;">outro texto marcado</mark> no final com a mesma tag MARK usando o parâmetro style para mudar a cor de fundo.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo, usando as tags BIG e SMALL.</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado, usando a tag DEL.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar ênfase usando a tag INS (semântica).</p>
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica).</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Usamos sobrescrito, tag SUP, para inserir algo do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Ou podemos usar a tag SUB para inserir subscrito como H<sub>2</sub>O</p>
+    <h2>Código</h2>
+    <p>Uso das tags PRE e CODE para inserir código:<pre><code>
+    num = int(input('Digite um número inteiro: '))
+    if num % 2 == 0:
+        print(f'O número digitado {num} é par.')
+    else:
+        print(f'O número digitado {num} é ímpar.')
+    print('Fim do programa')
+    </code></pre></p>
+    <h2>Citações</h2>
+    <p>Podemos fazer citação dentro de uma frase, sem deslocamento, usando a tag Q: <br>
+        Segundo Cecília Meireles, <q>Pelos caminhos do mundo nenhum destino se perde. Há os grandes sonhos dos homens e a surda força dos vermes.</q> <br>
+        Também podemos inserir a citação com deslocamento usando a tag BLOCKQUOTE:<blockquote>Pelos caminhos do mundo nenhum destino se perde. Há os grandes sonhos dos homens e a surda força dos vermes.</blockquote>
+        Também é possível colocar um link dentro da citação para os mecanismos de pesquisa da internet (o link não aparece no texto, mas facilita o SEO achar o livro) <blockquote cite="https://www.amazon.com.br/PHP-B%C3%ADblia-Converse-Joyce-Park/dp/8535211306">PHP é uma linguagem para a criação de scripts da Web do lado do servidor embutidos na HTML cujo código-fonte é aberto e que é compatível com os mais importantes servidores da Web (mais notadamente o Apache). Nesta segunda edição do PHP A Bíblia os autores expandiram significativamente o tamanho do livro tanto para cobrir novos recursos como para melhorar a cobertura de recursos já discutidos na primeira edição.</blockquote>
+    </p>
+    <h2>Abreviações</h2>
+    <p>Usamos a tag ABBR para colocar texto sensitivo em alguma parte do conteúdo. Exemplo: estou estudando <abbr title="Hipertext Markup Language">HTML</abbr> para criar sites.</p>
+    <h2>Texto invertido</h2>
+    <p>Para inverter o texto usamos a tab BDO com o parâmetro DIR = "rtl". Por exemplo:
+        <bdo dir="rtl">Este texto está todo invertido.</bdo>
+    </p>
+</body>
+</html>
