@@ -9,10 +9,14 @@ body {
 h1 {
     background-color: powderblue;
     color: darkblue;
-    font-size: 40px;
+    font-size: 1.5em;
 }
 
 h2 {
     color: brown;
-    font-size: 30px;
+    font-size: 1.2em;
+}
+
+p {
+    text-align: justify;
 }

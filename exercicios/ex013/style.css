@@ -8,12 +8,16 @@ body {
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 1.5em;
     color: blue;
-    background-color: rgb(130, 132, 243);
+    background-color: dodgerblue;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.2em;
     color: brown;
+}
+
+p {
+    text-align: justify;
 }
