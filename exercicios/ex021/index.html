@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        h1 {
+            /* os parâmetros de border e outline podem ser informados um por um, ou por uma shorthand que 
+            informará, pela ordem, width, style e color */
+            width: 300px;
+            height: 50px;
+            background-color: lightgray;
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: red; */
+            border: 10px solid red;
+
+            /*
+            outline-width: 30px;
+            outline-style: solid;
+            outline-color: blue; */
+            outline: 30px solid blue;
+
+            /* Todo elemento de caixa possui quatro valores para padding e quatro para margin, sempre nessa mesma ordem: superior (-top), direita (-right), inferior (-bottom), esquerda (-left). Quando colocamos um único valor de dimensão para o preenchimento ou margem, esse mesmo valor é aplicado simetricamente a todas as 
+            direções */
+            /* Também existe shorthand para padding e margin, informando apenas os valores de top/bottom e right/left, desde que top=bottom e right=left */
+            padding: 20px;
+            margin: 50px;
+            /* margin: auto; centraliza a caixa na janela */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa</h1>
+</body>
+</html>
