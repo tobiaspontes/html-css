@@ -13,9 +13,10 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #88726a9f;
-    width: 800px;
+    width: 640px;
     padding: 10px;
     margin: auto;
+    font-size: 0.8em;
 }
 
 h1 {
