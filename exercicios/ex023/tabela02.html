@@ -18,6 +18,15 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            
         }
 
         td, th {
@@ -30,6 +39,27 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /* seletor para zebrar as linhas do corpo da tabela; no exemplo abaixo, as linhas pares ficarão coloridas; se quiser colorir as ímpares, é só trocar 2n por 2n-1. */
+        /* tbody > tr:nth-child(2n) {   
+            background-color: lightgray;
+        } */
+
+        /* seletor para colorir o fundo das linhas ímpares do corpo da tabela */
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        /* seletor para colorir o fundo das linhas pares do corpo da tabela */
+        tbody > tr:nth-child(even) {
+            background-color: lightcyan;
+        }
+
         td.num {
             text-align: right;
         }
@@ -40,6 +70,7 @@
     <!--
         ANATOMIA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -48,10 +79,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federadas em 2021</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População em 2021</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -166,10 +198,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213.317.639</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequuntur quis vitae magni itaque saepe dolorem sint, labore at sunt quibusdam distinctio quidem nobis unde magnam assumenda enim debitis id. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dolores neque ex architecto ducimus cum sequi placeat, iste voluptas ad quos excepturi possimus nemo dicta totam. Quidem placeat rem culpa? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit eligendi commodi, nostrum laudantium vel error deserunt perferendis hic deleniti illum eveniet voluptas, dolores delectus consequuntur sequi, officia saepe aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis esse, doloribus aperiam eaque similique nesciunt dolorem qui. Alias obcaecati in est voluptates iusto quos aliquid quo, provident, aspernatur, cupiditate iure?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequuntur quis vitae magni itaque saepe dolorem sint, labore at sunt quibusdam distinctio quidem nobis unde magnam assumenda enim debitis id. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dolores neque ex architecto ducimus cum sequi placeat, iste voluptas ad quos excepturi possimus nemo dicta totam. Quidem placeat rem culpa? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit eligendi commodi, nostrum laudantium vel error deserunt perferendis hic deleniti illum eveniet voluptas, dolores delectus consequuntur sequi, officia saepe aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis esse, doloribus aperiam eaque similique nesciunt dolorem qui. Alias obcaecati in est voluptates iusto quos aliquid quo, provident, aspernatur, cupiditate iure?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequuntur quis vitae magni itaque saepe dolorem sint, labore at sunt quibusdam distinctio quidem nobis unde magnam assumenda enim debitis id. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dolores neque ex architecto ducimus cum sequi placeat, iste voluptas ad quos excepturi possimus nemo dicta totam. Quidem placeat rem culpa? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit eligendi commodi, nostrum laudantium vel error deserunt perferendis hic deleniti illum eveniet voluptas, dolores delectus consequuntur sequi, officia saepe aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis esse, doloribus aperiam eaque similique nesciunt dolorem qui. Alias obcaecati in est voluptates iusto quos aliquid quo, provident, aspernatur, cupiditate iure?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequuntur quis vitae magni itaque saepe dolorem sint, labore at sunt quibusdam distinctio quidem nobis unde magnam assumenda enim debitis id. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dolores neque ex architecto ducimus cum sequi placeat, iste voluptas ad quos excepturi possimus nemo dicta totam. Quidem placeat rem culpa? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit eligendi commodi, nostrum laudantium vel error deserunt perferendis hic deleniti illum eveniet voluptas, dolores delectus consequuntur sequi, officia saepe aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis esse, doloribus aperiam eaque similique nesciunt dolorem qui. Alias obcaecati in est voluptates iusto quos aliquid quo, provident, aspernatur, cupiditate iure?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequuntur quis vitae magni itaque saepe dolorem sint, labore at sunt quibusdam distinctio quidem nobis unde magnam assumenda enim debitis id. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dolores neque ex architecto ducimus cum sequi placeat, iste voluptas ad quos excepturi possimus nemo dicta totam. Quidem placeat rem culpa? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit eligendi commodi, nostrum laudantium vel error deserunt perferendis hic deleniti illum eveniet voluptas, dolores delectus consequuntur sequi, officia saepe aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis esse, doloribus aperiam eaque similique nesciunt dolorem qui. Alias obcaecati in est voluptates iusto quos aliquid quo, provident, aspernatur, cupiditate iure?</p>
 </body>
 </html>
